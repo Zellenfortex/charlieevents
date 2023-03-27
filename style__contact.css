@@ -1,0 +1,196 @@
+:root {
+  --body-color: hsl(195, 100%, 12%);
+  --heading-color: hsl(16, 84%, 64%);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+header {
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 46, 61, 0.55),
+      rgba(0, 46, 61, 0.65)
+    ),
+    url(./photos/4kk.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+}
+@media (max-width: 700px) {
+  header {
+    height: 80rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    padding-top: 13rem;
+    overflow: hidden;
+  }
+  .wrapper > * {
+    float: left;
+    padding: 2em 2em;
+  }
+}
+
+.contacts {
+  margin-right: 0;
+  background: transparent;
+  text-align: center;
+  color: var(--heading-color);
+}
+.bold {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+@media (max-width: 943px) {
+  .gmail {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 833px) {
+  .gmail {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 700px) {
+  .gmail {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .contacts {
+    width: 30%;
+    text-align: start;
+    min-height: 620px;
+  }
+}
+
+@media (min-width: 700px) {
+  .form {
+    width: 70%;
+  }
+}
+
+form p {
+  float: left;
+  width: 49%;
+}
+form p:not(:nth-child(2n)) {
+  margin-right: 2%;
+}
+form p:last-child {
+  clear: both;
+  width: 100%;
+}
+form p:nth-last-child(2) {
+  clear: both;
+  width: 100%;
+}
+
+.wrapper {
+  padding-top: 10rem;
+}
+.wrapper > * {
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text {
+  font-size: 1.6rem;
+  padding: 1.2rem 0 0rem 0;
+}
+
+.form {
+  background: transparent;
+  color: var(--heading-color);
+}
+
+form label {
+  display: block;
+}
+
+button,
+input,
+textarea {
+  padding: 1em;
+}
+
+button {
+  background: var(--heading-color);
+  color: black;
+  width: 100%;
+  border: 0;
+}
+button:hover,
+button:focus {
+  background: hsl(16, 84%, 70%);
+  outline: 0;
+}
+
+.contain {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+@media (min-width: 600px) {
+  .contain {
+    padding: 0;
+  }
+}
+
+h3,
+ul {
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+::placeholder {
+  color: hsl(16, 84%, 64%, 0.8);
+}
+input:focus::placeholder {
+  color: hsl(16, 84%, 64%);
+}
+
+textarea {
+  color: white;
+  font-size: 1.3rem;
+}
+
+input,
+textarea {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.09rem;
+  color: white;
+  resize: none;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid var(--heading-color);
+  width: 100%;
+}
+.Social{
+  padding-top: 1rem;
+}
+.Social img {
+  cursor: pointer;
+  width: 3rem;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}

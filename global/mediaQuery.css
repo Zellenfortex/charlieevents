@@ -1,0 +1,103 @@
+@media screen and (max-width: 1240px) {
+  nav ul {
+    background-color: grey;
+    position: fixed;
+    right: 0;
+    display: none;
+    padding: 0;
+    min-width: 20rem;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0.3s ease;
+  }
+
+  nav ul li {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 0;
+    margin-top: 3rem;
+  }
+
+  nav ul {
+    border: 1px solid red;
+  }
+  .active::before {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1.4rem;
+    right: 3rem;
+    transition: 0.3s ease;
+  }
+
+  .svg {
+    top: 15rem;
+  }
+  .svg2 {
+    top: 40rem;
+  }
+  .LargeLogo {
+    left: 10rem;
+  }
+  nav .menu {
+    display: block;
+    margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .LargeLogo {
+    left: 1rem;
+    width: 25rem;
+  }
+  nav .menu {
+    margin-left: 6rem;
+  }
+  #headphone,
+  #headphone2 {
+    display: none;
+  }
+  .container div {
+    font-size: 3vw;
+  }
+  .col-3 a::before {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  nav .menu {
+    margin-left: 4rem;
+  }
+  .hamburger {
+    right: 1rem;
+  }
+  .LargeLogo {
+    left: 0;
+    width: 20rem;
+  }
+  #fname,
+  #lname,
+  #email,
+  #phone {
+    width: 14rem;
+  }
+  .bordered-box {
+    width: 19rem;
+  }
+}
+
+@media screen and (max-height: 810px) {
+  .svg2 {
+    display: none;
+  }
+}
