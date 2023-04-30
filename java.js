@@ -86,5 +86,3 @@ btn.addEventListener('click', () => {
     zIndex = 1;
   }
 });
-
-//
