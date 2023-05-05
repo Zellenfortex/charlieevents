@@ -93,25 +93,27 @@
 
           <div class="form">
             <h3>Send us a message</h3>
-            <form action="">
+            <form action="https://formsubmit.co/4e7038c27b9bfb370817090c9110b3d5" method="POST">
               <p>
-                <input type="text" placeholder="Name" />
+                <input type="text" name="First Name" placeholder="Name" required/>
               </p>
               <p>
-                <input type="text" placeholder="Surname" />
+                <input type="text" name="Last Name" placeholder="Surname" />
               </p>
               <p>
-                <input type="email" placeholder="Email" />
+                <input type="email" name="Email" placeholder="Email" required/>
               </p>
               <p>
-                <input type="tel" placeholder="Phone" />
+                <input type="tel" name="Telephone" placeholder="Phone" />
               </p>
               <p>
                 <label for="">Write your message</label>
-                <textarea name="" id="" cols="" rows="7"></textarea>
+                <textarea name="Message" id="" cols="" rows="7" required></textarea>
               </p>
               <p>
-                <button id="btnn">Send a message</button>
+                <button type="submit" id="btnn">Send a message</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/form-thx.html">
+                <input type="hidden" name="_captcha" value="false">
               </p>
             </form>
           </div>
