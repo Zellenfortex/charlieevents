@@ -42,47 +42,56 @@ hamburger.addEventListener("click", () => {
   layers.forEach((layers) => layers.classList.toggle("activeHamburger"));
 });
 
-const btn = document.getElementById('btn');
-const navMenu = document.getElementById('navMenu');
-const logo = document.querySelector('.logo__size');
+const btn = document.getElementById("btn");
+const navMenu = document.getElementById("navMenu");
+const logo = document.querySelector(".logo__size");
 
-btn.addEventListener('click', () => {
-  navMenu.classList.toggle('actives');
+btn.addEventListener("click", () => {
+  navMenu.classList.toggle("actives");
 
   if (window.innerWidth < 558) {
-    if (logo.style.opacity === '0') {
-      logo.style.display = 'inline-block';
+    if (logo.style.opacity === "0") {
+      logo.style.display = "inline-block";
       setTimeout(() => {
-        logo.style.opacity = '1';
+        logo.style.opacity = "1";
       }, 150);
     } else {
-      logo.style.opacity = '0';
+      logo.style.opacity = "0";
       setTimeout(() => {
-        logo.style.opacity === '0';
+        logo.style.opacity === "0";
       }, 150);
     }
   }
 });
 
-window.addEventListener('resize', function() {
+window.addEventListener("resize", function () {
   if (window.innerWidth >= 584) {
-    if (logo.style.opacity === '0') {
-      logo.style.opacity = '1';
+    if (logo.style.opacity === "0") {
+      logo.style.opacity = "1";
     }
   }
 });
 
-const footer = document.querySelector('.footer');
-const shape = document.querySelector('.custom-shape');
+const footer = document.querySelector(".footer");
+const shape = document.querySelector(".custom-shape");
 
 let zIndex = 1;
 
-btn.addEventListener('click', () => {
+btn.addEventListener("click", () => {
   if (zIndex === 1) {
-    footer.style.zIndex = '-1';
+    footer.style.zIndex = "-1";
     zIndex = -1;
   } else {
-    footer.style.zIndex = '1';
+    footer.style.zIndex = "1";
     zIndex = 1;
   }
+});
+
+//image a href
+var image = document.getElementById("my-image");
+image.addEventListener("click", function () {
+  window.open(
+    "https://www.livetickets.ro/bilete/spring-breakers-dubla-x-charlie",
+    "_blank"
+  );
 });

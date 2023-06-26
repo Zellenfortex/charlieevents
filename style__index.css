@@ -147,6 +147,7 @@ header {
   background: white;
   border-radius: 0.25rem;
   overflow: hidden;
+  cursor: pointer;
 }
 .card-header {
   font-size: 1.5rem;
